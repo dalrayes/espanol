@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+5.times do
+	Deck.create(name: Faker::Hacker.adjective)
+end
+
+10.times do
+	Card.create(question: Faker::Hacker.say_something_smart , answer: Faker::Hacker.adjective, deck_id: rand(1..5))
+end
