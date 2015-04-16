@@ -11,17 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150414184119) do
+ActiveRecord::Schema.define(version: 20150416191852) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "cards", force: :cascade do |t|
     t.integer  "deck_id"
-    t.text     "question"
-    t.string   "answer"
+    t.text     "word"
+    t.text     "definition"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "conjugations", force: :cascade do |t|
+    t.string  "yo"
+    t.string  "tu"
+    t.string  "el_ella_usted"
+    t.string  "nosotros"
+    t.string  "vosotros"
+    t.string  "ellos_ellas_ustedes"
+    t.integer "card_id"
   end
 
   create_table "decks", force: :cascade do |t|

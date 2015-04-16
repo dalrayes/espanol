@@ -1,0 +1,6 @@
+<h1>All cards in <%=@deck.name%></h1>
+<p>
+	<% @deck.cards.each do |card| %>
+	<li><%= link_to card.word, card_path(card)%></li>
+	<% end %>
+</p>

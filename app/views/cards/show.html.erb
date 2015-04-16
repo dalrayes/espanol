@@ -1,1 +1,42 @@
-this is a specific card
+<h1> <%= @card.deck.name %></h1>
+
+<div class="word">
+	<div class="title">Word:</div>
+	<div class="text"><%= @card.word %></div>
+</div>
+
+<div class="definition">
+	<div class="title">Definition:</div> 
+	<div class="text"><%= @card.definition %></div>
+</div>
+
+<div class="conj">
+	<div class="title">Conjugation:</div>
+
+	<table>
+		<th>yo</th>
+		<th>tu</th>
+		<th>el/ella/usted</th>
+		<th>nosotros</th>
+		<th>vosotros</th>
+		<th>ellos/ellas/ustedes</th>
+	<tr>
+		<td><%=@card.conjugation.yo%></td>
+		<td><%=@card.conjugation.tu%></td>
+		<td><%=@card.conjugation.el_ella_usted%></td>
+		<td><%=@card.conjugation.nosotros%></td>
+		<td><%=@card.conjugation.vosotros%></td>
+		<td><%=@card.conjugation.ellos_ellas_ustedes%></td>
+	</tr>
+</table>
+
+
+</div>
+
+
+<div class="link_button">
+<%= link_to "Previous", @card.previous if @card.previous.present? %></div>
+
+<div class="link_button">
+<%= link_to "Next", @card.next if @card.next.present? %>
+</div>

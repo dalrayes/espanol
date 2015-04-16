@@ -1,1 +1,15 @@
-This will show all the decks
+<h1>All card decks</h1>
+
+<table>
+	<th>Deck name</th>
+	<th>Number of cards</th>
+
+	<% @decks.each do |deck| %>
+	<tr>
+	<td><%= link_to deck.name, deck_path(deck)%>    </td>
+	<td><%=deck.cards.size%>
+</tr>
+
+	<% end %>
+
+</p>
