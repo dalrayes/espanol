@@ -1,43 +1,44 @@
 <h1> <%= @card.deck.name %></h1>
 
+<div class="row">
+	<div class="front panel small-3">
+		<h2>Word:</h2>
+		<h3 class="subheader"><%= @card.word %></h2>
+	</div>
 
-	<h2>Word:</h2>
-	<h2 class="subheader"><%= @card.word %></h2>
+	<div class="definition panel callout small-3">
+		<h2>Definition:</h2>
+		<h3 class="subheader"><%= @card.definition %></h2>
+	</div>
+
+	<div class="conj small-9">
+		<div class="title">Conjugation:</div>
+
+		<table>
+				<th>yo</th>
+				<th>tu</th>
+				<th>el/ella/usted</th>
+				<th>nosotros</th>
+				<th>vosotros</th>
+				<th>ellos/ellas/ustedes</th>
+			<tr>
+				<td><%=@card.conjugation.yo%></td>
+				<td><%=@card.conjugation.tu%></td>
+				<td><%=@card.conjugation.el_ella_usted%></td>
+				<td><%=@card.conjugation.nosotros%></td>
+				<td><%=@card.conjugation.vosotros%></td>
+				<td><%=@card.conjugation.ellos_ellas_ustedes%></td>
+			</tr>
+		</table>
+
+	</div>
 
 
-<div class="definition">
-	<h2>Definition:</h2> 
-	<h2 class="subheader"><%= @card.definition %></h2>
+	<% if @card.previous.present? %>
+	<%= link_to "Previous", @card.previous, class:"round button" %>
+	<% end %>
+
+	<% if @card.next.present? %>
+	<%= link_to "Next", @card.next, class:"round button" %>
+	<% end %>
 </div>
-
-<div class="conj">
-	<div class="title">Conjugation:</div>
-
-	<table>
-		<th>yo</th>
-		<th>tu</th>
-		<th>el/ella/usted</th>
-		<th>nosotros</th>
-		<th>vosotros</th>
-		<th>ellos/ellas/ustedes</th>
-	<tr>
-		<td><%=@card.conjugation.yo%></td>
-		<td><%=@card.conjugation.tu%></td>
-		<td><%=@card.conjugation.el_ella_usted%></td>
-		<td><%=@card.conjugation.nosotros%></td>
-		<td><%=@card.conjugation.vosotros%></td>
-		<td><%=@card.conjugation.ellos_ellas_ustedes%></td>
-	</tr>
-</table>
-
-
-</div>
-
-<% if @card.previous.present? %>
-<%= link_to "Previous", @card.previous, class:"round button" %>
-<% end %>
-
-<% if @card.next.present? %>
-<%= link_to "Next", @card.next, class:"round button" %>
-<% end %>
-
