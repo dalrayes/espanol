@@ -12,6 +12,10 @@
     <%= csrf_meta_tags %>
   </head>
 
+<nav class="breadcrumbs">
+  <a href="#">Home</a>
+  <%=link_to "Decks", decks_path%>
+</nav>
   <body>
 
     <%= yield %>
