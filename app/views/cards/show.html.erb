@@ -33,10 +33,11 @@
 
 </div>
 
+<% if @card.previous.present? %>
+<%= link_to "Previous", @card.previous, class:"round button" %>
+<% end %>
 
-<div class="link_button">
-<%= link_to "Previous", @card.previous if @card.previous.present? %></div>
+<% if @card.next.present? %>
+<%= link_to "Next", @card.next, class:"round button" %>
+<% end %>
 
-<div class="link_button">
-<%= link_to "Next", @card.next if @card.next.present? %>
-</div>
