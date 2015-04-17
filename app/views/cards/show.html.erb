@@ -35,12 +35,12 @@
 	<% if @card.previous.present? %>
 	<%= link_to "Previous", @card.previous, class:"round button" %>
 	<% else %>
-	<%= link_to "Back to Decks", decks_path, class:"round button" %>
+	<%= link_to "Back to All words", deck_path(@card.deck), class:"round button" %>
 	<% end %>
 
 	<% if @card.next.present? %>
 	<%= link_to "Next", @card.next, class:"round button" %>
 	<% else %>
-	<%= link_to "Back to Decks", decks_path, class:"round button" %>
+	<%= link_to "Back to All decks", decks_path, class:"round button" %>
 	<% end %>
 
