@@ -1,6 +1,8 @@
 <h1>All cards in <%=@deck.name%></h1>
-<p>
+<p class="medium-6">
 	<% @deck.cards.each do |card| %>
-	<li><%= link_to card.word, card_path(card)%></li>
+	<%= link_to card.word, card_path(card), class: "secondary button"%>
 	<% end %>
+
+	<%=link_to "Start Deck", card_path(1), class: "button" %>
 </p>
