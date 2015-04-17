@@ -41,6 +41,14 @@
 .back, .flipped {
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);
+background: -moz-repeating-linear-gradient(180deg, #1301FE, #1301FE 0, #FEECF3 0, #FFFFFF 2px, #FFFFFF 29px);/* FF3.6+ */
+background: -webkit-repeating-gradient(linear, 180deg, color-stop(0, 1301FE), color-stop(0, FEECF3), color-stop(2px, FFFFFF), color-stop(29px, FFFFFF));/* Chrome,Safari4+ */
+background: -webkit-repeating-linear-gradient(180deg, #1301FE, #1301FE 0, #FEECF3 0, #FFFFFF 2px, #FFFFFF 29px);/* Chrome10+,Safari5.1+ */
+background: -o-repeating-linear-gradient(180deg, #1301FE, #1301FE 0, #FEECF3 0, #FFFFFF 2px, #FFFFFF 29px);/* Opera 11.10+ */
+background: -ms-linear-gradient(180deg, #1301FE, #1301FE 0, #FEECF3 0, #FFFFFF 2px, #FFFFFF 29px);/* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); /* for IE */
+background: repeating-linear-gradient(180deg, #1301FE, #1301FE 0, #FEECF3 0, #FFFFFF 2px, #FFFFFF 29px);/* W3C */
+
 }
 
 .front p{

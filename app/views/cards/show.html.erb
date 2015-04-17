@@ -40,9 +40,7 @@
 
 
 	<% if @card.next.present? %>
-<div id="next">
 	<%= link_to "Next", @card.next, class:"round button" %>
-</div>
 	<% else %>
 	<%= link_to "Back to All decks", decks_path, class:"round button" %>
 	<% end %>

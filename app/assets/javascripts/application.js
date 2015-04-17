@@ -20,4 +20,11 @@ $(document).ready(function() {
 	$('.flashcard').on('click',function() {
 		$('.flashcard').toggleClass('flipped');
 	});
+
+ $( document ).on( "swipeleft", page, function() {
+  $.mobile.changePage( next + ".html", { transition: "slide" });
+   });
+
+
+
 });
