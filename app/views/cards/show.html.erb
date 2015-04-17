@@ -1,37 +1,35 @@
 <h1> <%= @card.deck.name %></h1>
 
-<div class="row">
-	<div class="front panel small-3">
-		<h2>Word:</h2>
-		<h3 class="subheader"><%= @card.word %></h2>
-	</div>
+<div class="stage">
 
-	<div class="definition panel callout small-3">
-		<h2>Definition:</h2>
-		<h3 class="subheader"><%= @card.definition %></h2>
-	</div>
+  <div class="flashcard">
 
-	<div class="conj small-9">
-		<div class="title">Conjugation:</div>
-
-		<table>
-				<th>yo</th>
-				<th>tu</th>
-				<th>el/ella/usted</th>
-				<th>nosotros</th>
-				<th>vosotros</th>
-				<th>ellos/ellas/ustedes</th>
-			<tr>
-				<td><%=@card.conjugation.yo%></td>
-				<td><%=@card.conjugation.tu%></td>
-				<td><%=@card.conjugation.el_ella_usted%></td>
-				<td><%=@card.conjugation.nosotros%></td>
-				<td><%=@card.conjugation.vosotros%></td>
-				<td><%=@card.conjugation.ellos_ellas_ustedes%></td>
-			</tr>
-		</table>
-
-	</div>
+    <div class="front">
+      <p><%=@card.word %></p>
+    </div>
+  
+    <div class="back">
+      <p><%=@card.definition %></p>
+      		<table>
+						<th>yo</th>
+						<th>tu</th>
+						<th>el/ella/usted</th>
+						<th>nosotros</th>
+						<th>vosotros</th>
+						<th>ellos/ellas/ustedes</th>
+					<tr>
+						<td><%=@card.conjugation.yo%></td>
+						<td><%=@card.conjugation.tu%></td>
+						<td><%=@card.conjugation.el_ella_usted%></td>
+						<td><%=@card.conjugation.nosotros%></td>
+						<td><%=@card.conjugation.vosotros%></td>
+						<td><%=@card.conjugation.ellos_ellas_ustedes%></td>
+					</tr>
+				</table>
+    </div>
+  
+  </div>  
+</div>
 
 
 	<% if @card.previous.present? %>
@@ -40,5 +38,7 @@
 
 	<% if @card.next.present? %>
 	<%= link_to "Next", @card.next, class:"round button" %>
+	<% else %>
+	<%= link_to "Back to Decks", decks_path, class:"round button" %>
 	<% end %>
-</div>
+
