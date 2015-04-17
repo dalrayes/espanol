@@ -16,6 +16,13 @@
 
  */
 
+.homeheader{
+	font-family: 'Dancing Script', cursive;
+	text-align:center;
+	margin-top: 50px;
+}
+
+
 .stage{
 	-webkit-perspective:1000;
 }

@@ -1,2 +1,7 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div class="small-2 large-4">
+<h1 class="homeheader">mi aplicación española</h1>
+
+<%=link_to "Select a Deck", decks_path, class:"round button small" %>
+
+<%= link_to "Random Card", card_path(rand(1..Card.count)), class:"round button small" %>
+</div>
