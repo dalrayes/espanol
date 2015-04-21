@@ -1,6 +1,6 @@
 <h1> <%= @card.deck.name %></h1>
 
-<div class="stage">
+<div class="stage" ontouchstart="this.classList.toggle('hover');">
 
   <div class="flashcard">
 
@@ -39,7 +39,7 @@
 	<% end %>
 
 
-	<% if @card.next.present? %>
+	<% if @card.next.present? && @card.next.deck == @card.deck %>
 	<%= link_to "Next", @card.next, class:"round button" %>
 	<% else %>
 	<%= link_to "Back to All decks", decks_path, class:"round button" %>
