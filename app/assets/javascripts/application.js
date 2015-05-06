@@ -17,14 +17,22 @@
 
 
 $(document).ready(function() {
-	$('.flashcard').on('click',function() {
-		$('.flashcard').toggleClass('flipped');
-	});
+  $('.flashcard').on('click',function() {
+    $('.flashcard').toggleClass('flipped');
+  });
 
- $( document ).on( "swipeleft", page, function() {
-  $.mobile.changePage( next + ".html", { transition: "slide" });
-   });
+  // $('a.next_card').on("click", function(){
+  //  event.preventDefault();
 
+  //  var nextUrl=$(this).attr('href');
 
+  //  $.ajax({
+  //    url: nextUrl,
+  //    success:function(response){
+  //      var thefront=$(response).find('div.front');
+  //      $('div.flashcard').append(thefront);
 
+  //    }
+  //  })
+  // });
 });

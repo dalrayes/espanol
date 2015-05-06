@@ -1,1 +1,77 @@
-deck_id,word,definition1,dar, to give1,decir, to say or to tell1,hacer,to make or to do1,ir,to go1,jugar,to play1,oir,to hear1,poder,to be able to1,poner,to put1,querer,to want1,salir,to leave1,venir,to come1,ver,to see2,almorzar,to eat lunch2,aprobar,to approve2,colgar,to hang(up)2,contar,to count2,costar,to cost2,devolver,to return(an object)2,dormir,to sleep2,encontrar,to find2,envolver,to wrap(up)2,morder,to bite2,morir,to die2,mostrar,to show2,mover,to move(an object)2,probar,"to prove, test, sample, taste"2,recordar,to remember2,resolver,to solve2,rogar,"to beg, pray"2,sonar,"to sound, ring"2,soñar (con),to dream (about)2,tostar,to toast2,volver,to return2,volar,to fly3,acertar,to guess or to get right3,advertir,to advise/warn3,cerrar,to close/shut3,comenzar,to begin/commence3,confesar,to confess3,consentir,to consent3,convertir,to convert3,defender,to defend3,empezar,to begin3,encender,to light/ kindle3,entender,to understand3,fregar,to scrub(dishes)/wash(dishes)3,hervir,to boil3,mentir,to lie/tell a lie3,negar,to deny3,pensar(en),to think(about)3,perder,to lose3,preferir,to prefer3,querer,to want/wish3,referir,to refer3,sentir,to feel sorry/ regret3,sugerir,to suggest3,temblar,to tremble3,tropezar (con),to stumble/bump into4,bendecir,to bless4,colegir,to deduce4,competir,to compete4,conseguir,to obtain or to get4,corregir,to correct4,decir,to say or to tell4,despedir,to fire4,elegir,to elect4,freir,to fry4,gemir,to groan or to moan4,impedir,to impede or to hinder4,maldecir,to curse4,medir,to be long or to measure4,pedir,"to request, ask for"4,reir,to laugh4,repetir,to repeat4,seguir,to follow or to continue4,servir,to serve
+deck_id,word,definition
+1,dar,to give
+1,decir,to say or to tell
+1,hacer,to make or to do
+1,ir,to go
+1,jugar,to play
+1,oir,to hear
+1,poder,to be able to
+1,poner,to put
+1,querer,to want
+1,salir,to leave
+1,venir,to come
+1,ver,to see
+2,almorzar,to eat lunch
+2,aprobar,to approve
+2,colgar,to hang(up)
+2,contar,to count
+2,costar,to cost
+2,devolver,to return(an object)
+2,dormir,to sleep
+2,encontrar,to find
+2,envolver,to wrap(up)
+2,morder,to bite
+2,morir,to die
+2,mostrar,to show
+2,mover,to move(an object)
+2,probar,"to prove, test, sample, taste"
+2,recordar,to remember
+2,resolver,to solve
+2,rogar,"to beg, pray"
+2,sonar,"to sound, ring"
+2,soñar (con),to dream (about)
+2,tostar,to toast
+2,volver,to return
+2,volar,to fly
+3,acertar,to guess or to get right
+3,advertir,to advise/warn
+3,cerrar,to close/shut
+3,comenzar,to begin/commence
+3,confesar,to confess
+3,consentir,to consent
+3,convertir,to convert
+3,defender,to defend
+3,empezar,to begin
+3,encender,to light/ kindle
+3,entender,to understand
+3,fregar,to scrub(dishes)/wash(dishes)
+3,hervir,to boil
+3,mentir,to lie/tell a lie
+3,negar,to deny
+3,pensar(en),to think(about)
+3,perder,to lose
+3,preferir,to prefer
+3,querer,to want/wish
+3,referir,to refer
+3,sentir,to feel sorry/ regret
+3,sugerir,to suggest
+3,temblar,to tremble
+3,tropezar (con),to stumble/bump into
+4,bendecir,to bless
+4,colegir,to deduce
+4,competir,to compete
+4,conseguir,to obtain or to get
+4,corregir,to correct
+4,decir,to say or to tell
+4,despedir,to fire
+4,elegir,to elect
+4,freir,to fry
+4,gemir,to groan or to moan
+4,impedir,to impede or to hinder
+4,maldecir,to curse
+4,medir,to be long or to measure
+4,pedir,"to request, ask for"
+4,reir,to laugh
+4,repetir,to repeat
+4,seguir,to follow or to continue
+4,servir,to serve

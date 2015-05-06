@@ -1,47 +1,52 @@
 <h1> <%= @card.deck.name %></h1>
 
-<div class="stage" ontouchstart="this.classList.toggle('hover');">
+<div class="stage row">
 
-  <div class="flashcard">
+  <div class="flashcard large-6 columns">
 
     <div class="front">
       <p><%=@card.word %></p>
     </div>
-  
+
     <div class="back">
       <p><%=@card.definition %></p>
-      		<table>
-						<th>yo</th>
-						<th>tu</th>
-						<th>el/ella/usted</th>
-						<th>nosotros</th>
-						<th>vosotros</th>
-						<th>ellos/ellas/ustedes</th>
-					<tr>
-						<td><%=@card.conjugation.yo%></td>
-						<td><%=@card.conjugation.tu%></td>
-						<td><%=@card.conjugation.el_ella_usted%></td>
-						<td><%=@card.conjugation.nosotros%></td>
-						<td><%=@card.conjugation.vosotros%></td>
-						<td><%=@card.conjugation.ellos_ellas_ustedes%></td>
-					</tr>
-				</table>
+        <table class="responsive">
+            <th>yo</th>
+            <th>tu</th>
+            <th>el/<br>
+              ella/<br>
+              usted</th>
+            <th>nosotros</th>
+            <th>vosotros</th>
+            <th>ellos/<br>
+              ellas/<br>
+              ustedes</th>
+          <tr>
+            <td><%=@card.conjugation.yo%></td>
+            <td><%=@card.conjugation.tu%></td>
+            <td><%=@card.conjugation.el_ella_usted%></td>
+            <td><%=@card.conjugation.nosotros%></td>
+            <td><%=@card.conjugation.vosotros%></td>
+            <td><%=@card.conjugation.ellos_ellas_ustedes%></td>
+          </tr>
+        </table>
     </div>
-  
-  </div>  
+  </div>
 </div>
 
+<div class="row">
+  <div class="large-6 columns">
+    <% if @card.previous.present? %>
+    <%= link_to "Previous", @card.previous, class:"round button" %>
+    <% else %>
+    <%= link_to "Back to All words", deck_path(@card.deck), class:"round button" %>
+    <% end %>
 
-	<% if @card.previous.present? %>
-	<%= link_to "Previous", @card.previous, class:"round button" %>
-	<% else %>
-	<%= link_to "Back to All words", deck_path(@card.deck), class:"round button" %>
-	<% end %>
 
-
-	<% if @card.next.present? && @card.next.deck == @card.deck %>
-	<%= link_to "Next", @card.next, class:"round button" %>
-	<% else %>
-	<%= link_to "Back to All decks", decks_path, class:"round button" %>
-	<% end %>
-
+    <% if @card.next.present? && @card.next.deck == @card.deck %>
+    <%= link_to "Next", @card.next, class:"round button next_card" %>
+    <% else %>
+    <%= link_to "Back to All decks", decks_path, class:"round button" %>
+    <% end %>
+  </div>
+</div>

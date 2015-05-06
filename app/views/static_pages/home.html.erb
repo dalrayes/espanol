@@ -1,7 +1,11 @@
-<div class="small-2 large-4">
-<h1 class="homeheader">mi aplicación española</h1>
+<div class="row">
+  <div class="large-12columns">
+   <h1 class="homeheader">mi aplicación española</h1>
 
-<%=link_to "Select a Deck", decks_path, class:"round button small" %>
 
-<%= link_to "Random Card", card_path(rand(1..Card.count)), class:"round button small" %>
+  <div class="homeheader">
+    <%=link_to "Select a Deck", decks_path, class:"round button small" %>
+
+    <%= link_to "Random Card", card_path(rand(1..Card.count)), class:"round button small" %></div>
+  </div>
 </div>
